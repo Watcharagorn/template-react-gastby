@@ -1,54 +1,37 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
+# Temaplate-React-Vite
 
-## 🚀 Quick start
+[![React-18.1.0](https://img.shields.io/badge/React-18.1.0-blue?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Tailwind-3.8.1](https://img.shields.io/badge/Tailwind-3.8.1-38bdf8?style=flat&logo=tailwind-css&logoColor=38bdf8)](https://tailwindcss.com/brand)
+[![Gastby-4.24.0](https://img.shields.io/badge/Gastby-4.24.0-646cff?style=flat&logo=gatsby&logoColor=purple)](https://vitejs.dev/)
 
-1.  **Create a Gatsby site.**
+### Template Footprint
+```bash
+# install gastby CLI
+npm install -g gatsby-cli
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+# initial vite-react
+gatsby new
+> TypeScript
+> No CMS ( add later )
+> No Additional lib
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+# initial tailwind
+npm install -D tailwindcss postcss autoprefixer gatsby-plugin-postcss
+npx tailwindcss init -p
+```
 
-2.  **Start developing.**
+### How to run
+```bash
+# run app local
+gatsby develop 
+# or 
+npm run dev
 
-    Navigate into your new site’s directory and start it up.
+# production
+npm run serve
+```
+> Server running on =>  http://localhost:8080/
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+### Guide
+- [Gastby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-1/)
+- [Tailwind Gatsby Getting Started](https://tailwindcss.com/docs/guides/gatsby)
