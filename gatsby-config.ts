@@ -1,50 +1,16 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `gastby.app`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        // Override the file regex for Sass
-        sassRuleTest: /\.global\.s(a|c)ss$/,
-        // Override the file regex for CSS modules
-        sassRuleModulesTest: /\.mod\.s(a|c)ss$/,
-        useResolveUrlLoader: true,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        "trackingId": "324310916"
-      }
-    }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        "icon": "src/images/icon.png"
-      }
-    }, "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "images",
-        "path": "./src/images/"
-      },
-      __key: "images"
-    }, {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "pages",
-        "path": "./src/pages/"
-      },
-      __key: "pages"
-    }]
-};
+    'gatsby-plugin-postcss',
+  ],
+}
 
-export default config;
+export default config
